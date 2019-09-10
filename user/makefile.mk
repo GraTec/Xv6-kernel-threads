@@ -26,7 +26,8 @@ USER_PROGS := \
 	test_fork\
 	basic_thread\
 	clone3-test\
-	zombie
+	zombie\
+	myprog\
 
 USER_PROGS := $(addprefix user/, $(USER_PROGS))
 

@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/usr/bin/indicator-sysmonitor", line 22, in <module>
+    gi.require_version('AppIndicator3', '0.1')
+  File "/usr/lib/python3.7/site-packages/gi/__init__.py", line 129, in require_version
+    raise ValueError('Namespace %s not available' % namespace)
+ValueError: Namespace AppIndicator3 not available
+/usr/bin/indicator-sysmonitor:32: PyGIDeprecationWarning: Since version 3.11, calling threads_init is no longer needed. See: https://wiki.gnome.org/PyGObject/Threading
+  GLib.threads_init()
+INFO:root:start
+/usr/bin/indicator-sysmonitor:109: PyGTKDeprecationWarning: Using positional arguments with the GObject constructor has been deprecated. Please specify keyword(s) for "label" or use a class specific constructor. See: https://wiki.gnome.org/PyGObject/InitializerDeprecations
+  full_sysmon = Gtk.MenuItem(_('System Monitor'))
+/usr/bin/indicator-sysmonitor:115: PyGTKDeprecationWarning: Using positional arguments with the GObject constructor has been deprecated. Please specify keyword(s) for "label" or use a class specific constructor. See: https://wiki.gnome.org/PyGObject/InitializerDeprecations
+  pref_menu = Gtk.MenuItem(_('Preferences'))
+/usr/bin/indicator-sysmonitor:120: PyGTKDeprecationWarning: Using positional arguments with the GObject constructor has been deprecated. Please specify keyword(s) for "label" or use a class specific constructor. See: https://wiki.gnome.org/PyGObject/InitializerDeprecations
+  help_menu = Gtk.MenuItem(_('Help'))
+/usr/bin/indicator-sysmonitor:125: PyGTKDeprecationWarning: Using positional arguments with the GObject constructor has been deprecated. Please specify keyword(s) for "label" or use a class specific constructor. See: https://wiki.gnome.org/PyGObject/InitializerDeprecations
+  exit_menu = Gtk.MenuItem(_('Quit'))
+INFO:root:Menu shown
+INFO:root:Fetcher started
+
+(indicator-sysmonitor:17078): libappindicator-WARNING **: 01:20:54.137: Unable to connect to the Notification Watcher: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “RegisterStatusNotifierItem”
+INFO:root:Terminated
+
+(indicator-sysmonitor:17078): Gtk-CRITICAL **: 01:21:00.348: gtk_main_quit: assertion 'main_loops != NULL' failed

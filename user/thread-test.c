@@ -20,8 +20,7 @@ int global = 1;
 
 void worker(void *arg_ptr);
 
-int
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
    ppid = getpid();
 
