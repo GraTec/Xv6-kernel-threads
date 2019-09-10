@@ -29,11 +29,11 @@ void lock_release(lock_t *lk){
 int
 thread_create(void (*start_routine)(void*), void *arg)
 {
-	// lock_t lk;
-	// lock_init(&lk);
-	// lock_acquire(&lk);
+	lock_t lk;
+	lock_init(&lk);
+	lock_acquire(&lk);
 	void *stack= malloc(PGSIZE*2);
-	// lock_release(&lk);
+	lock_release(&lk);
 
 	if((uint)stack % PGSIZE)
 		stack = stack + (PGSIZE - (uint)stack % PGSIZE);
